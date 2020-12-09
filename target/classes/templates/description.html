@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<title>Application Description</title>
+
+<!-- Reference Bootstrap files -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<div class="mainbox col-md-3 col-md-offset-2 col-sm-6 col-sm-offset-2">
+		<h5>Registration is required to use the application, upon completion of registration 
+		please check your email and activate your account. Basically there are 3 registered user in the system already: 
+		<b>user, manager and admin</b>.
+		All of them can be logged in with the <i>"pass"</i> password.</h5>
+		<hr>
+		<h5>Application Features (Full CRUD support):</h5>
+		<ul >
+			<li >The users are able to:</li>
+				<ul >
+					<li >access the list of employees</li>
+					<li >search by name</li>
+				</ul>
+			<li >The managers are able to:</li>
+				<ul>
+					<li>access the list of employees</li>
+					<li>search by name</li>
+					<li>add new employee to the database</li>
+					<li>update an employee</li>
+				</ul>
+			<li>The admins are able to:</li>
+				<ul>
+					<li>access the list of employees</li>
+					<li >search by name</li>
+					<li >add new employee to the database</li>
+					<li>update an employee</li>
+					<li>delete an employee</li>
+				</ul>
+		</ul>
+
+		<br>
+
+		<h4>Technologies:</h4>
+		<ul class="list-group list-group-flush">
+			<li class="list-group-item">Spring Boot</li>
+			<li class="list-group-item">Spring Security</li>
+			<li class="list-group-item">MySQL</li>
+			<li class="list-group-item">Spring Data JPA</li>
+			<li class="list-group-item">Hibernate</li>
+			<li class="list-group-item">Thymeleaf</li>
+		</ul>
+		
+		<a th:href="@{/showMyLoginPage}" class="btn btn-success" role="button" aria-pressed="true">Login</a>
+		<a th:href="@{/register/showRegistrationForm}" class="btn btn-primary" role="button" aria-pressed="true">Register</a>
+
+	</div>
+
+</body>
+
+</html>
+
+
+
+
+
+

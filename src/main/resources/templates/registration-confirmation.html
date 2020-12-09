@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<title>Registration Confirmation</title>
+
+<!-- Reference Bootstrap files -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<div class="mainbox col-md-3 col-md-offset-2 col-sm-6 col-sm-offset-2">
+
+		<h2>User registered successfully!</h2>
+
+		<hr>
+
+		<a th:href="@{/showMyLoginPage}" class="btn btn-primary" role="button" aria-pressed="true">Login with new user</a>
+
+	</div>
+</body>
+
+</html>
